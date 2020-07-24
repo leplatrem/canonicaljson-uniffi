@@ -1,0 +1,19 @@
+[package]
+name = "canonicaljson-uniffi"
+version = "0.1.0"
+authors = ["Mathieu Leplatre <mathieu@mozilla.com>"]
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib"]
+name = "uniffi_canonicaljson"
+
+[dependencies]
+uniffi = {path = "../uniffi-rs/uniffi"}
+uniffi_macros = {path = "../uniffi-rs/uniffi_macros"}
+ffi-support = "0.4"
+log = "0.4"
+
+[build-dependencies]
+uniffi = {path = "../uniffi-rs/uniffi"}
+
